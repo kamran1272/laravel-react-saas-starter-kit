@@ -9,9 +9,12 @@ import Users from './pages/Users.jsx';
 import NotFound from './pages/NotFound.jsx';
 
 export default function App() {
+  // Works both at domain root and under a sub-path (e.g. GitHub Pages):
+  // Vite's BASE_URL (from the `base` build option) becomes the router basename.
+  const basename = import.meta.env.BASE_URL.replace(/\/$/, "") || "/";
   return (
     <AuthProvider>
-      <BrowserRouter>
+      <BrowserRouter basename={basename}>
         <Routes>
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
