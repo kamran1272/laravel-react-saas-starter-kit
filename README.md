@@ -4,6 +4,10 @@ A production-grade starter kit for building SaaS products: a **Laravel 11 API ba
 
 Stop rebuilding auth for every project. Clone, install, and start building your product on day one.
 
+![SaaS Starter Kit dashboard](https://kamran1272.github.io/portfolio/images/projects/saas-starter-kit.png)
+
+**[Live interactive demo](https://kamran1272.github.io/laravel-react-saas-starter-kit/)** — sign in with `admin@demo.io` / `password`.
+
 ---
 
 ## Features
