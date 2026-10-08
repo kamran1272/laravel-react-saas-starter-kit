@@ -1,12 +1,17 @@
 import axios from 'axios';
+import { createDemoClient, isDemoMode } from './demoMock.js';
 
-const client = axios.create({
+// Public preview builds (VITE_DEMO_MODE=true) run against an in-memory mock
+// API so the demo is fully clickable without a backend. The shipped product
+// defaults to the real Laravel API.
+const client = isDemoMode() ? createDemoClient() : axios.create({
   baseURL: `${import.meta.env.VITE_API_URL || 'http://localhost:8000'}/api`,
   headers: {
     Accept: 'application/json',
   },
 });
 
+if (!isDemoMode()) {
 // Attach the auth token on every request.
 client.interceptors.request.use((config) => {
   const token = localStorage.getItem('saas_token');
@@ -30,5 +35,6 @@ client.interceptors.response.use(
     return Promise.reject(error);
   }
 );
+}
 
 export default client;
