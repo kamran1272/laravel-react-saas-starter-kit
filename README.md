@@ -53,7 +53,7 @@ php artisan serve --port=8000
 
 The API is now live at `http://localhost:8000/api`.
 
-> **Do NOT run `php artisan migrate --seed`.** The kit ships with a pre-seeded `database/database.sqlite`, so the demo works out of the box — re-running the seeder crashes with a duplicate-entry error on the `admin@demo.io` email. The only time to run `php artisan migrate:fresh --seed` is when you want a **clean reset** of the database.
+> **Do NOT run `php artisan migrate --seed`.** The kit ships with a pre-seeded `database/database.sqlite`, so the demo works out of the box — re-running the seeder is harmless (it only fills in missing demo data), but it won't reset anything. The only time to run `php artisan migrate:fresh --seed` is when you want a **clean reset** of the database.
 
 ### 2. Frontend
 
