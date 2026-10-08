@@ -1,5 +1,7 @@
 <?php
 
+$frontendUrl = env('FRONTEND_URL', 'http://localhost:5173');
+
 return [
 
     /*
@@ -17,7 +19,13 @@ return [
 
     'allowed_methods' => ['*'],
 
-    'allowed_origins' => [env('FRONTEND_URL', 'http://localhost:5173')],
+    'allowed_origins' => array_values(array_unique(array_filter([
+        $frontendUrl,
+        // Browsers send only scheme + host as the Origin header, so also
+        // allow the bare origin when the frontend lives under a sub-path
+        // (e.g. https://user.github.io/my-app).
+        preg_replace('#^([a-z]+://[^/]+).*$#i', '$1', $frontendUrl),
+    ]))),
 
     'allowed_origins_patterns' => [],
 
