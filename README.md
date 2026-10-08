@@ -4,10 +4,6 @@ A production-grade starter kit for building SaaS products: a **Laravel 11 API ba
 
 Stop rebuilding auth for every project. Clone, install, and start building your product on day one.
 
-![SaaS Starter Kit dashboard](https://kamran1272.github.io/portfolio/images/projects/saas-starter-kit.png)
-
-**[Live interactive demo](https://kamran1272.github.io/laravel-react-saas-starter-kit/)** — sign in with `admin@demo.io` / `password`.
-
 ---
 
 ## Features
@@ -158,6 +154,20 @@ php artisan test
 - The backend ships without `vendor/` — run `composer install` after extracting.
 - The frontend ships without `node_modules/` — run `npm install` after extracting.
 - CORS is pre-configured for `http://localhost:5173` via `FRONTEND_URL`.
+
+## Demo mode (interactive preview)
+
+Build the frontend with `VITE_DEMO_MODE=true` to run it against an in-memory
+mock API (`frontend/src/api/demoMock.js`) — no backend needed. The preview is
+fully clickable: sign in with `admin@demo.io` / `password`, browse the
+dashboard, and manage the sample users. Used for the public GitHub Pages demo:
+
+```bash
+cd frontend
+VITE_DEMO_MODE=true npm run build -- --base=/your-sub-path/
+```
+
+The shipped product defaults to the real Laravel API (`VITE_DEMO_MODE` unset).
 
 ---
 
