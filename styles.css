@@ -310,3 +310,8 @@ code {
   html { scroll-behavior: auto; }
   * { transition: none !important; }
 }
+
+/* Poster graphics (AI-generated product posters) */
+.shot-img{width:100%;aspect-ratio:16/9;background-size:cover;background-position:center top;}
+.poster{margin-top:44px;aspect-ratio:16/9;background-size:cover;background-position:center;border-radius:var(--radius);border:1px solid var(--line);box-shadow:0 24px 70px rgba(0,0,0,.5);}
+@media (max-width:640px){.poster{margin-top:32px;}}
