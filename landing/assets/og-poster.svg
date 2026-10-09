@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="90%">
+      <stop offset="0%" stop-color="#141d33"/>
+      <stop offset="100%" stop-color="#0b0f1a"/>
+    </radialGradient>
+    <radialGradient id="redGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ff4d4d" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#ff4d4d" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="cyanGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#61dafb" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#61dafb" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="badge" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f5c044"/>
+      <stop offset="100%" stop-color="#e0a82e"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="130" cy="500" r="260" fill="url(#redGlow)"/>
+  <circle cx="1070" cy="130" r="260" fill="url(#cyanGlow)"/>
+
+  <!-- geometric wireframe accents -->
+  <g fill="none" stroke="#ff4d4d" stroke-opacity="0.5" stroke-width="2">
+    <polygon points="90,120 150,85 210,120 150,155"/>
+    <polygon points="150,85 150,40 210,120" stroke-opacity="0.3"/>
+    <circle cx="1010" cy="500" r="46" stroke="#61dafb" stroke-opacity="0.55"/>
+    <circle cx="1010" cy="500" r="18" stroke="#61dafb" stroke-opacity="0.55"/>
+    <line x1="1010" y1="454" x2="1010" y2="420" stroke="#61dafb" stroke-opacity="0.55"/>
+    <line x1="1010" y1="546" x2="1010" y2="580" stroke="#61dafb" stroke-opacity="0.55"/>
+    <line x1="964" y1="500" x2="930" y2="500" stroke="#61dafb" stroke-opacity="0.55"/>
+    <line x1="1056" y1="500" x2="1090" y2="500" stroke="#61dafb" stroke-opacity="0.55"/>
+  </g>
+  <g fill="none" stroke="#61dafb" stroke-opacity="0.28" stroke-width="1.5">
+    <polygon points="880,120 940,90 1000,120 1000,180 940,210 880,180"/>
+    <polygon points="940,90 940,150 1000,180" stroke-opacity="0.5"/>
+  </g>
+
+  <!-- shield (auth) mark -->
+  <g transform="translate(96,420)" fill="none" stroke="#ff4d4d" stroke-width="5" stroke-opacity="0.85">
+    <path d="M40 8 L72 20 V48 C72 68 58 80 40 88 C22 80 8 68 8 48 V20 Z"/>
+    <path d="M28 46 L38 56 L54 36" stroke="#ff4d4d" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- headline -->
+  <text x="600" y="252" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-weight="800" font-size="76" fill="#ffffff" letter-spacing="-1.5">Laravel + React</text>
+  <text x="600" y="340" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-weight="800" font-size="76" fill="#ffffff" letter-spacing="-1.5">SaaS Starter Kit</text>
+  <text x="600" y="402" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-weight="500" font-size="34" fill="#61dafb">Launch your SaaS in days, not weeks.</text>
+
+  <!-- price badge -->
+  <rect x="470" y="448" width="260" height="72" rx="36" fill="none" stroke="url(#badge)" stroke-width="3"/>
+  <text x="600" y="496" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-weight="800" font-size="36" fill="#f5c044">$19 launch price</text>
+
+  <text x="600" y="588" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-weight="600" font-size="20" fill="#9aa7c4" letter-spacing="2">SANCTUM AUTH &#183; ROLES &#183; USERS CRUD &#183; DASHBOARD &#183; MIT LICENSED</text>
+</svg>
