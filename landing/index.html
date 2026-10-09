@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laravel React SaaS Boilerplate — SaaS Starter Kit (Laravel 11 + React 18) | $19</title>
+  <meta name="description" content="Laravel React SaaS boilerplate: production-ready SaaS starter kit with Laravel 11 API (Sanctum auth, roles, users CRUD) + React 18 dashboard. Skip weeks of setup — launch your SaaS in days. $19 launch price, MIT licensed.">
+  <meta name="keywords" content="laravel react saas boilerplate, saas starter kit, laravel 11 react 18, react saas template, laravel sanctum auth boilerplate, saas codebase for sale">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://kamran1272.github.io/laravel-react-saas-starter-kit/">
+  <meta name="author" content="Kamran Khan">
+  <meta name="theme-color" content="#0a0c11">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Kamran Khan — Full-Stack Developer">
+  <meta property="og:title" content="Laravel + React SaaS Starter Kit — Launch Your SaaS in Days, Not Weeks">
+  <meta property="og:description" content="Production-ready Laravel 11 API (Sanctum auth, roles, users CRUD) + React 18 dashboard. Real shipped code, tested and documented. $19 launch price.">
+  <meta property="og:url" content="https://kamran1272.github.io/laravel-react-saas-starter-kit/">
+  <meta property="og:image" content="https://kamran1272.github.io/laravel-react-saas-starter-kit/assets/og-poster.svg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Laravel + React SaaS Starter Kit — launch your SaaS in days, not weeks. $19 launch price.">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Laravel + React SaaS Starter Kit — Launch Your SaaS in Days, Not Weeks">
+  <meta name="twitter:description" content="Production-ready Laravel 11 + React 18 SaaS boilerplate with auth, roles, and dashboard. $19 launch price.">
+  <meta name="twitter:image" content="https://kamran1272.github.io/laravel-react-saas-starter-kit/assets/og-poster.svg">
+  <meta name="twitter:image:alt" content="Laravel + React SaaS Starter Kit — $19 launch price">
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230a0c11'/%3E%3Cpath d='M28 62 L50 30 L72 62' stroke='%23ff4b33' stroke-width='9' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='50' cy='74' r='6' fill='%2338e1ff'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="assets/poster-hero.css">
+<link rel="stylesheet" href="assets/poster-features.css">
+<link rel="stylesheet" href="assets/poster-stack.css">
+
+  <!-- Structured data: Product -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Laravel + React SaaS Starter Kit",
+    "description": "Production-ready SaaS boilerplate: Laravel 11 API with Sanctum authentication, role-based access control and users CRUD, plus a React 18 + Vite dashboard frontend. 166 real project files, 10 passing feature tests, MIT licensed.",
+    "image": "https://kamran1272.github.io/laravel-react-saas-starter-kit/assets/og-poster.svg",
+    "brand": { "@type": "Brand", "name": "Kamran Khan" },
+    "category": "Software > Developer Tools > Boilerplate",
+    "offers": {
+      "@type": "Offer",
+      "url": "https://kamranofficial.gumroad.com/l/mhekoig",
+      "priceCurrency": "USD",
+      "price": "19",
+      "availability": "https://schema.org/InStock",
+      "seller": { "@type": "Person", "name": "Kamran Khan", "url": "https://kamran1272.github.io/portfolio/" }
+    }
+  }
+  </script>
+  <!-- Structured data: FAQ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "What exactly do I get when I buy the Laravel React SaaS starter kit?", "acceptedAnswer": { "@type": "Answer", "text": "An instant ZIP download containing the complete Laravel 11 backend, the complete React 18 frontend, and the documentation (setup guides, folder map, feature list). Plus free updates for future versions of the kit." } },
+      { "@type": "Question", "name": "What are the requirements to run the SaaS boilerplate?", "acceptedAnswer": { "@type": "Answer", "text": "PHP 8.2+, Composer, Node.js 18+, and a database — SQLite works out of the box with zero configuration, or use MySQL/PostgreSQL. Basic familiarity with Laravel and React is assumed." } },
+      { "@type": "Question", "name": "Can I use the starter kit in client projects?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. The kit is MIT licensed — use it in unlimited personal and client projects, including commercial ones." } },
+      { "@type": "Question", "name": "Is this a real working project, or a skeleton?", "acceptedAnswer": { "@type": "Answer", "text": "Real and working: 166 project files, passing feature tests, a pre-seeded demo database, and a live demo you can try right now. Every feature listed is implemented and documented." } },
+      { "@type": "Question", "name": "How do I get the download after buying?", "acceptedAnswer": { "@type": "Answer", "text": "Checkout happens through Gumroad (secure payment). You get the download link instantly after purchase, and the files are yours to keep forever." } },
+      { "@type": "Question", "name": "What if I get stuck during setup?", "acceptedAnswer": { "@type": "Answer", "text": "The included docs walk through setup step by step for both the backend and frontend. The kit also ships with a working live demo, so you can see the finished result before you start." } }
+    ]
+  }
+  </script>
+  <!-- Structured data: Breadcrumbs -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Kamran Khan — Portfolio", "item": "https://kamran1272.github.io/portfolio/" },
+      { "@type": "ListItem", "position": 2, "name": "Laravel + React SaaS Starter Kit", "item": "https://kamran1272.github.io/laravel-react-saas-starter-kit/" }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <nav class="nav" id="nav" aria-label="Main navigation">
+    <div class="wrap nav-inner">
+      <a class="brand" href="#top" aria-label="SaaS Starter Kit — back to top">
+        <svg class="brand-mark" viewBox="0 0 100 100" aria-hidden="true"><rect width="100" height="100" rx="22" fill="#121826"/><path d="M28 62 L50 30 L72 62" stroke="#ff4b33" stroke-width="9" fill="none" stroke-linecap="round" stroke-linejoin="round"/><circle cx="50" cy="74" r="6" fill="#38e1ff"/></svg>
+        <span>SaaS <em>Starter Kit</em></span>
+      </a>
+      <div class="nav-links">
+        <a href="#inside">Inside</a>
+        <a href="#stack">Stack</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+        <a class="btn btn-sm" href="https://kamranofficial.gumroad.com/l/mhekoig" rel="noopener">Get it — $19</a>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main">
+  <header class="hero" id="top">
+    <div class="wrap">
+      <p class="eyebrow"><span class="prompt" aria-hidden="true">$</span> laravel 11 + react 18 boilerplate</p>
+      <h1>Ship your SaaS in <span class="hl-ember">days</span>,<br>not <span class="hl-cyan">weeks</span>.</h1>
+      <p class="lede">The Laravel + React SaaS Starter Kit is a production-ready boilerplate built on patterns from real, shipped client projects. Stop rebuilding authentication, roles, and dashboards from scratch — clone it, install it, and start building your product on day one.</p>
+      <div class="hero-cta">
+        <a class="btn" href="https://kamranofficial.gumroad.com/l/mhekoig" rel="noopener">Buy now — $19</a>
+        <a class="btn btn-ghost" href="https://kamran1272.github.io/laravel-react-saas-starter-kit/demo/" rel="noopener">View the live demo</a>
+      </div>
+      <p class="price-note"><strong>$19</strong> launch price <del>$29</del> <span class="sep" aria-hidden="true">·</span> Instant ZIP download <span class="sep" aria-hidden="true">·</span> Free updates included</p>
+
+      <div class="shot" role="img" aria-label="Preview of the SaaS Starter Kit admin dashboard: sidebar navigation, stat cards and a users table">
+        <div class="shot-bar" aria-hidden="true">
+          <span class="d d1"></span><span class="d d2"></span><span class="d d3"></span>
+          <span class="shot-url">saas-starter-kit / dashboard</span>
+        </div>
+        <div class="shot-img poster-hero" role="img" aria-label="SaaS Starter Kit admin dashboard — dark sidebar, stat cards and users table"></div>
+      </div>
+      <p class="demo-link">Try it live before you buy — sign in to the demo with <code>admin@demo.io</code> / <code>password</code>. It runs against a real Laravel API, not a mock.</p>
+
+      <dl class="hero-stats">
+        <div class="stat"><dt class="sr">Project files</dt><dd><b>166</b><span>real project files</span></dd></div>
+        <div class="stat"><dt class="sr">Feature tests</dt><dd><b>10</b><span>passing feature tests</span></dd></div>
+        <div class="stat"><dt class="sr">License</dt><dd><b>MIT</b><span>use anywhere</span></dd></div>
+        <div class="stat"><dt class="sr">Apps included</dt><dd><b>2</b><span>API + frontend</span></dd></div>
+      </dl>
+    </div>
+  </header>
+
+  <section class="proof" aria-label="Why this kit exists">
+    <div class="wrap">
+      <p class="proof-line"><strong>Built from patterns in real, shipped client projects</strong> — not a tutorial demo. Every endpoint, component, and migration below exists in the download and works out of the box.</p>
+    </div>
+  </section>
+
+  <section id="inside" aria-labelledby="inside-h">
+    <div class="wrap">
+      <p class="sec-no" aria-hidden="true">01</p>
+      <div class="sec-head">
+        <h2 id="inside-h">What's inside the SaaS boilerplate</h2>
+        <p>Every feature below exists in the kit, works out of the box, and is covered by the setup docs. No stubs, no placeholder code.</p>
+      </div>
+      <div class="grid-2">
+        <article class="card">
+          <h3><span class="tick" aria-hidden="true"></span>Backend — Laravel 11 API</h3>
+          <ul>
+            <li>Sanctum token authentication — register, login, logout, and "me" endpoints</li>
+            <li>Role-based access control (<code>admin</code> / <code>user</code>) via a reusable <code>role</code> middleware</li>
+            <li>Full Users CRUD API (admin only) — pagination, validation, self-delete protection</li>
+            <li>Dashboard stats endpoint with real database-computed metrics</li>
+            <li>JSON-first API — clean 401/403/404/422 JSON responses everywhere</li>
+            <li>Pre-seeded database — the demo works out of the box, zero config</li>
+            <li>10 passing feature tests covering the auth flow</li>
+            <li><code>.env.example</code> and an organized, readable codebase</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3><span class="tick" aria-hidden="true"></span>Frontend — React 18 + Vite</h3>
+          <ul>
+            <li>Login / Register pages with per-field validation errors</li>
+            <li>Auth context with token persistence and automatic session restore</li>
+            <li>Protected routes plus admin-only routes</li>
+            <li>Dashboard layout — dark sidebar, topbar, 4 stat cards, recent-users table</li>
+            <li>Admin Users page — full CRUD with modals, role management, pagination</li>
+            <li>Axios API client with Bearer token injection and 401 auto-logout</li>
+            <li>Tailwind CSS styling, ready to theme</li>
+          </ul>
+        </article>
+      </div>
+      <article class="card docs-card">
+        <h3><span class="tick" aria-hidden="true"></span>Documentation included</h3>
+        <p>Step-by-step setup guides for the backend and frontend, a folder map, a complete feature list, and a live-demo walkthrough — a developer with basic Laravel and React familiarity can be running in minutes, not hours.</p>
+      </article>
+    </div>
+    <div class="poster poster-features" role="img" aria-label="SaaS Starter Kit features — Sanctum authentication, role-based access, dashboard stats and Users CRUD API"></div>
+  </section>
+
+  <section id="for" class="alt" aria-labelledby="for-h">
+    <div class="wrap">
+      <p class="sec-no" aria-hidden="true">02</p>
+      <div class="sec-head">
+        <h2 id="for-h">Who is this SaaS starter kit for?</h2>
+      </div>
+      <div class="grid-3">
+        <article class="card mini">
+          <svg class="mini-ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8z" fill="none" stroke="#ff4b33" stroke-width="2" stroke-linejoin="round"/></svg>
+          <h3>Freelancers</h3>
+          <p>Ship client MVPs faster. Quote shorter timelines and win more projects — the auth, roles, and admin panel your clients expect are already done.</p>
+        </article>
+        <article class="card mini">
+          <svg class="mini-ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 15c-1.5 1.5-2 5-2 5s3.5-.5 5-2M14 4c3-2 7-2 7-2s0 4-2 7l-7 7-5-5 7-7z" fill="none" stroke="#38e1ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <h3>Indie hackers &amp; founders</h3>
+          <p>Launching your own SaaS? Start from a tested, secure foundation instead of an empty repo, and spend your energy on the features that make you money.</p>
+        </article>
+        <article class="card mini">
+          <svg class="mini-ic" viewBox="0 0 24 24" aria-hidden="true"><path d="m8 8-4 4 4 4M16 8l4 4-4 4" fill="none" stroke="#f5b73f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <h3>Done rebuilding auth</h3>
+          <p>If you've wired up login, registration, and roles for the tenth time, this is your last time. Save weeks on every future project.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="stack" aria-labelledby="stack-h">
+    <div class="wrap">
+      <p class="sec-no" aria-hidden="true">03</p>
+      <div class="sec-head">
+        <h2 id="stack-h">Modern tech stack, zero lock-in</h2>
+        <p>Current, boring-in-a-good-way technology — the same stack behind thousands of production SaaS products.</p>
+      </div>
+      <ul class="stack" aria-label="Technologies included">
+        <li class="badge">Laravel 11 <small>API backend</small></li>
+        <li class="badge">React 18 <small>frontend</small></li>
+        <li class="badge">Vite <small>build tooling</small></li>
+        <li class="badge">Tailwind CSS <small>styling</small></li>
+        <li class="badge">Sanctum <small>token auth</small></li>
+        <li class="badge">Axios <small>API client</small></li>
+        <li class="badge">SQLite <small>zero-config default</small></li>
+        <li class="badge">MySQL / PostgreSQL <small>supported</small></li>
+        <li class="badge">PHP 8.2+ <small>required</small></li>
+        <li class="badge">Node.js 18+ <small>required</small></li>
+      </ul>
+    <div class="poster poster-stack" role="img" aria-label="SaaS Starter Kit technology stack — Laravel 11, React 18, Vite, Tailwind CSS, Sanctum"></div>
+    </div>
+  </section>
+
+  <section id="code" class="alt" aria-labelledby="code-h">
+    <div class="wrap">
+      <p class="sec-no" aria-hidden="true">04</p>
+      <div class="sec-head">
+        <h2 id="code-h">Real code, not stubs</h2>
+        <p>A peek at the actual route definitions shipping in the kit — clean, conventional Laravel you can extend on day one.</p>
+      </div>
+      <div class="codewin" role="img" aria-label="Code sample: Laravel API routes protected by Sanctum authentication and a reusable role middleware">
+        <div class="codewin-bar" aria-hidden="true"><span class="d d1"></span><span class="d d2"></span><span class="d d3"></span><span class="codewin-file">routes/api.php</span></div>
+<pre class="codewin-body"><code><span class="c-com">// Public auth endpoints</span>
+<span class="c-kw">Route</span>::<span class="c-fn">post</span>(<span class="c-str">'/register'</span>, [AuthController::<span class="c-kw">class</span>, <span class="c-str">'register'</span>]);
+<span class="c-kw">Route</span>::<span class="c-fn">post</span>(<span class="c-str">'/login'</span>, [AuthController::<span class="c-kw">class</span>, <span class="c-str">'login'</span>]);
+
+<span class="c-com">// Everything below needs a Sanctum token</span>
+<span class="c-kw">Route</span>::<span class="c-fn">middleware</span>(<span class="c-str">'auth:sanctum'</span>)-&gt;<span class="c-fn">group</span>(<span class="c-kw">function</span> () {
+    <span class="c-kw">Route</span>::<span class="c-fn">get</span>(<span class="c-str">'/me'</span>, [AuthController::<span class="c-kw">class</span>, <span class="c-str">'me'</span>]);
+    <span class="c-kw">Route</span>::<span class="c-fn">post</span>(<span class="c-str">'/logout'</span>, [AuthController::<span class="c-kw">class</span>, <span class="c-str">'logout'</span>]);
+
+    <span class="c-com">// Admin-only: reusable role middleware</span>
+    <span class="c-kw">Route</span>::<span class="c-fn">middleware</span>(<span class="c-str">'role:admin'</span>)-&gt;<span class="c-fn">group</span>(<span class="c-kw">function</span> () {
+        <span class="c-kw">Route</span>::<span class="c-fn">apiResource</span>(<span class="c-str">'users'</span>, UserController::<span class="c-kw">class</span>);
+        <span class="c-kw">Route</span>::<span class="c-fn">get</span>(<span class="c-str">'dashboard/stats'</span>, [DashboardController::<span class="c-kw">class</span>, <span class="c-str">'stats'</span>]);
+    });
+});</code></pre>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing" aria-labelledby="pricing-h">
+    <div class="wrap">
+      <p class="sec-no" aria-hidden="true">05</p>
+      <div class="sec-head center">
+        <h2 id="pricing-h">One price. Yours forever.</h2>
+        <p>No subscriptions, no tiers, no upsells — the complete kit for less than an hour of freelance work.</p>
+      </div>
+      <article class="price-card" aria-label="Pricing: Laravel + React SaaS Starter Kit">
+        <p class="price-eyebrow">Launch price — ends soon</p>
+        <p class="price"><span class="cur" aria-hidden="true">$</span>19 <del>$29</del></p>
+        <p class="price-sub">one-time payment · instant ZIP download</p>
+        <ul class="price-list">
+          <li>Complete Laravel 11 backend (166 files)</li>
+          <li>Complete React 18 + Vite frontend</li>
+          <li>Full documentation &amp; setup guides</li>
+          <li>MIT license — unlimited projects</li>
+          <li>Free updates for future versions</li>
+        </ul>
+        <a class="btn btn-lg" href="https://kamranofficial.gumroad.com/l/mhekoig" rel="noopener">Get the kit — $19</a>
+        <p class="price-fine">Secure checkout via Gumroad · The files are yours to keep forever</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="faq" class="alt" aria-labelledby="faq-h">
+    <div class="wrap">
+      <p class="sec-no" aria-hidden="true">06</p>
+      <div class="sec-head">
+        <h2 id="faq-h">Frequently asked questions</h2>
+      </div>
+      <div class="faq">
+        <details>
+          <summary>What exactly do I get when I buy?</summary>
+          <p>An instant ZIP download containing the complete Laravel 11 backend, the complete React 18 frontend, and the documentation (setup guides, folder map, feature list). Plus free updates for future versions of the kit.</p>
+        </details>
+        <details>
+          <summary>What are the requirements to run it?</summary>
+          <p>PHP 8.2+, Composer, Node.js 18+, and a database — SQLite works out of the box with zero configuration, or use MySQL/PostgreSQL. Basic familiarity with Laravel and React is assumed.</p>
+        </details>
+        <details>
+          <summary>Can I use it in client projects?</summary>
+          <p>Yes. The kit is MIT licensed — use it in unlimited personal and client projects, including commercial ones.</p>
+        </details>
+        <details>
+          <summary>Is this a real working project, or a skeleton?</summary>
+          <p>Real and working: 166 project files, passing feature tests, a pre-seeded demo database, and a live demo you can try right now. Every feature listed above is implemented and documented.</p>
+        </details>
+        <details>
+          <summary>How do I get the download?</summary>
+          <p>Checkout happens through Gumroad (secure payment). You'll get the download link instantly after purchase, and the files are yours to keep forever.</p>
+        </details>
+        <details>
+          <summary>What if I get stuck during setup?</summary>
+          <p>The included docs walk through setup step by step for both the backend and frontend. The kit also ships with a working live demo, so you can see the finished result before you start.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="final" aria-labelledby="final-h">
+    <div class="wrap">
+      <p class="sec-no" aria-hidden="true">07</p>
+      <h2 id="final-h">Stop rebuilding auth.<br>Start building your product.</h2>
+      <p>Join the developers who skip straight to the interesting part. Get the Laravel + React SaaS Starter Kit today for the $19 launch price — before it goes up to $29.</p>
+      <a class="btn btn-lg" href="https://kamranofficial.gumroad.com/l/mhekoig" rel="noopener">Get the kit — $19</a>
+      <p class="guarantee">Instant download · MIT licensed · Free updates · Real, tested code</p>
+    </div>
+  </section>
+  </main>
+
+  <footer>
+    <div class="wrap foot-inner">
+      <p>© 2026 Kamran Khan — Full-Stack Developer (Laravel + React)</p>
+      <nav aria-label="Footer">
+        <a href="https://kamran1272.github.io/portfolio/">Portfolio</a>
+        <a href="https://github.com/kamran1272">GitHub</a>
+        <a href="https://kamranofficial.gumroad.com/l/mhekoig" rel="noopener">Gumroad</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+  // Sticky nav shadow on scroll + footer year (tiny, no frameworks)
+  (function () {
+    var nav = document.getElementById('nav');
+    function onScroll() { nav.classList.toggle('scrolled', window.scrollY > 8); }
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+  })();
+  </script>
+</body>
+</html>
